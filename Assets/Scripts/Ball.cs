@@ -20,6 +20,22 @@ public class Ball : MonoBehaviour
         force.x = Random.Range(-1f, 1f);
         force.y = -1f;
         
-        rb.AddForce(force * speed);
+        rb.AddForce(force.normalized * speed);
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Brick"))
+        {
+            other.gameObject.SetActive(false);
+            GameManager.Instance.AddScore(1);
+            speed += 5f;
+        }
+        
+        if (other.gameObject.CompareTag("MissZone"))
+        {
+            Debug.Log("GameOver");
+            gameObject.SetActive(false);
+        }
     }
 }

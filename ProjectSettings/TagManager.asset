@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Brick
   - Wall
+  - Ball
+  - MissZone
   layers:
   - Default
   - TransparentFX
