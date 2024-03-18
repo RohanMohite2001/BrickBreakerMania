@@ -9,9 +9,15 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     [SerializeField] private Vector3 startingReference;
     [SerializeField] private TextMeshProUGUI scoreText;
-    private int score = 0;
+    [SerializeField] private TextMeshProUGUI livesText;
+    
     [SerializeField] private GameObject brickPrefab;
-
+    private Vector3 instantiatePos;
+    public Ball ball;
+    
+    public int score = 0;
+    public int lives = 0;
+    
     private void Awake()
     {
         Instance = this;
@@ -19,6 +25,15 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        NewGame();
+    }
+
+    private void NewGame()
+    {
+        lives = 3;
+        score = 0;
+        ShowLives(0);
+        ShowScore(0);
         Instantiate_Bricks(5);
     }
 
@@ -28,14 +43,23 @@ public class GameManager : MonoBehaviour
         {
             for (int brick = 0; brick < bricksNo; brick++)
             {
-                Instantiate(brickPrefab, startingReference + new Vector3(bricksNo,0,0), Quaternion.identity);
+                instantiatePos = startingReference + new Vector3(brick * 2.5f, 0, 0);
+                Instantiate(brickPrefab, instantiatePos, Quaternion.identity);
             }
+
+            startingReference += new Vector3(0, 1, 0);
         }
     }
 
-    public void AddScore(int score)
+    public void ShowScore(int score)
     {
         this.score += score;
-        scoreText.text = this.score.ToString();
+        scoreText.text = "Score : " + this.score.ToString();
+    }
+    
+    public void ShowLives(int lives)
+    {
+        this.lives += lives;
+        livesText.text = "Lives : " + this.lives.ToString();
     }
 }

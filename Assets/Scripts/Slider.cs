@@ -11,10 +11,16 @@ public class Slider : MonoBehaviour
     private Vector2 direction;
     [SerializeField] private float speed = 30f;
     private float maxBouncingAngle = 75f;
+    public Vector2 startingPos;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        startingPos = this.transform.position;
     }
 
     private void Update()
