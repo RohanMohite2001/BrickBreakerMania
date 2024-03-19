@@ -440,8 +440,8 @@ MonoBehaviour:
   ball: {fileID: 1029523680}
   score: 0
   lives: 0
-  rows: 2
-  columns: 3
+  rows: 5
+  columns: 5
 --- !u!4 &155929350
 Transform:
   m_ObjectHideFlags: 0
@@ -1850,6 +1850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d4e1af84facd44f87a854150b5d95a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 7756281044936973231, guid: 188d000020d25e44fbd79fb3e3146a3c, type: 3}
   speed: 400
   slider: {fileID: 218914523}
 --- !u!1001 &1088394068
@@ -2168,6 +2169,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6763339725156568707, guid: 4c729d66db8d18e43ab92694555dac69, type: 3}
   m_PrefabInstance: {fileID: 695132905}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1338251263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1338251265}
+  - component: {fileID: 1338251264}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1338251264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338251263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9ef16c1764d944eb6ca31e58cc4b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brickDestroySFX: {fileID: 8300000, guid: e6a71221a7422154a8d54e186b6d5358, type: 3}
+--- !u!4 &1338251265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338251263}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1339257550 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6763339725156568707, guid: 4c729d66db8d18e43ab92694555dac69, type: 3}
@@ -3456,3 +3502,4 @@ SceneRoots:
   - {fileID: 1346271876}
   - {fileID: 1612046766}
   - {fileID: 2140100912}
+  - {fileID: 1338251265}

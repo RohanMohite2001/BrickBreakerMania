@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
     public void StartLevel()
     {
         transform.position = startingPos;
-        speed = 400f;
+        speed = 300f;
         slider.transform.position = startingPos;
         force = Vector2.zero;
         force.x = Random.Range(-1f, 1f);
@@ -41,6 +41,7 @@ public class Ball : MonoBehaviour
         if (other.gameObject.CompareTag("Brick"))
         {
             Instantiate(explosionPrefab, other.transform.position, other.transform.rotation);
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.brickDestroySFX);
             other.gameObject.SetActive(false);
             GameManager.Instance.ShowScore(1);
         }
