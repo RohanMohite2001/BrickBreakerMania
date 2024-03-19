@@ -11,8 +11,9 @@ public class Slider : MonoBehaviour
     private Vector2 direction;
     [SerializeField] private float speed = 30f;
     private float maxBouncingAngle = 75f;
-    public Vector2 startingPos;
-
+    public Vector3 startingPos;
+    public Vector3 originalScale;
+    private float powerUpCollectTime;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -20,7 +21,8 @@ public class Slider : MonoBehaviour
 
     private void Start()
     {
-        startingPos = this.transform.position;
+        startingPos = transform.position;
+        originalScale = transform.localScale;
     }
 
     private void Update()
@@ -64,5 +66,20 @@ public class Slider : MonoBehaviour
                                                                    other.gameObject.GetComponent<Rigidbody2D>().velocity
                                                                        .magnitude;
         }
+        
+        
+        if (other.gameObject.CompareTag("PowerUp"))
+        {
+            Destroy(other.gameObject);
+            transform.localScale += new Vector3(.2f, 0, 0);
+            StartCoroutine(PowerUpTimer(5f));
+        }
+    }
+
+    private IEnumerator PowerUpTimer(float time)
+    {
+        yield return new WaitForSeconds(time);
+        transform.localScale = originalScale;
+        Debug.Log("Size resets");
     }
 }

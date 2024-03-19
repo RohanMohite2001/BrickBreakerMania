@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - Ball
   - MissZone
+  - FxTemporaire
+  - PowerUp
   layers:
   - Default
   - TransparentFX

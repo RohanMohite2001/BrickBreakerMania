@@ -9,8 +9,11 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 force;
     [SerializeField] private GameObject explosionPrefab;
+    [SerializeField] private GameObject powerUp;
     [SerializeField] private float speed = 400f;
-    private Vector2 startingPos;
+    [SerializeField] private Vector3 startingPos;
+    [SerializeField] private int probabilityTime = 10;
+    [SerializeField] private ParticleSystem brickExplosion; 
     public Slider slider;
     private void Awake()
     {
@@ -19,7 +22,7 @@ public class Ball : MonoBehaviour
 
     private void Start()
     {
-        startingPos = this.transform.position;
+        startingPos = transform.position;
         StartLevel();
     }
 
@@ -27,7 +30,8 @@ public class Ball : MonoBehaviour
     {
         transform.position = startingPos;
         speed = 300f;
-        slider.transform.position = startingPos;
+        slider.transform.position = slider.startingPos;
+        slider.transform.localScale = slider.originalScale;
         force = Vector2.zero;
         force.x = Random.Range(-1f, 1f);
         force.y = -1f;
@@ -37,10 +41,17 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        speed += 10f;
         if (other.gameObject.CompareTag("Brick"))
         {
-            Instantiate(explosionPrefab, other.transform.position, other.transform.rotation);
+            int probability = Random.Range(1, 100);
+            if (probability < probabilityTime)
+            {
+                Instantiate(powerUp, other.transform.position, other.transform.rotation);
+            }
+            //Instantiate(explosionPrefab, other.transform.position, other.transform.rotation);
+            brickExplosion.transform.position = other.transform.position;
+            brickExplosion.gameObject.SetActive(true);
+            brickExplosion.Play();
             AudioManager.Instance.PlaySFX(AudioManager.Instance.brickDestroySFX);
             other.gameObject.SetActive(false);
             GameManager.Instance.ShowScore(1);
