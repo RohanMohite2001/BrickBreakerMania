@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using DG.Tweening;
 using Random = UnityEngine.Random;
 
 public class Ball : MonoBehaviour
@@ -13,7 +15,8 @@ public class Ball : MonoBehaviour
     [SerializeField] private float speed = 400f;
     [SerializeField] private Vector3 startingPos;
     [SerializeField] private int probabilityTime = 10;
-    [SerializeField] private ParticleSystem brickExplosion; 
+    [SerializeField] private ParticleSystem brickExplosion;
+    [SerializeField] private int brickCount = 0;
     public Slider slider;
     private void Awake()
     {
@@ -54,6 +57,15 @@ public class Ball : MonoBehaviour
             brickExplosion.Play();
             AudioManager.Instance.PlaySFX(AudioManager.Instance.brickDestroySFX);
             other.gameObject.SetActive(false);
+
+            brickCount++;
+
+            if (brickCount == 5)
+            {
+                GameManager.Instance.IncreamentPoints();
+                brickCount = 0;
+                return;
+            }
             GameManager.Instance.ShowScore(1);
         }
         

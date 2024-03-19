@@ -1,0 +1,3739 @@
+fileFormatVersion: 2
+guid: 25bc7838684766545849b7513ce7111d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SaveMe_0
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1524
+        width: 70
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae8122f325991647a182beeae3058e7
+      internalID: 479112348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_1
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1998
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfc75a8dbc0ddf478b513a0083cfc48
+      internalID: -1015607336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_2
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 2016
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa23a2da879f9b40bed2accb73b28ae
+      internalID: 1463000872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_3
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 2040
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0630bc462f2962e4fb320a438e3b371a
+      internalID: -247576263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_4
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1518
+        width: 60
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de76bd3d4146fb49ac11e1ccd69a14a
+      internalID: -1952796490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_5
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 2034
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844ab7a97c0e96143bc8155cb93ddfec
+      internalID: -871824949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_6
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 2028
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b8e480b8923ae41aa499f1f7f3e592
+      internalID: -1954133696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_7
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1914
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7b16733f1ff0b448549196cebda3f5
+      internalID: -96641788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1905
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d793f6b1afcce48459d8fd05611de74a
+      internalID: -948664388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1911
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951402acb04dec94b925b70e1d104538
+      internalID: -2101093864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1848
+        width: 36
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7717c91c21f4f844aa5ef06c9a1355cb
+      internalID: -1156131574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_11
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 476
+        width: 1128
+        height: 1552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aaeee6145a0c44691c9535303a58d1
+      internalID: -1077536846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1788
+        width: 155
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b8c57561e24d6439a6425dd1b43606
+      internalID: 63051724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_13
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1787
+        width: 73
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d5ba3aa7dbd53478e7af76e7d77d0b
+      internalID: 1092620584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1788
+        width: 116
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e87509af6020f2488b5b09dbc76c92c
+      internalID: 512699396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_15
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1790
+        width: 33
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae292430aa295494992039d829fd88c4
+      internalID: -776052369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_16
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1788
+        width: 89
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a17e7ec9da8a1743a80ede7d0a55859
+      internalID: -1715474254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_17
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1818
+        width: 33
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a1184be13734a4d98f81797ae36e47
+      internalID: -1038771055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_18
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1758
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8279fb860bc0a484ab1f2a2c9ac60eef
+      internalID: 1769835987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1758
+        width: 78
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587aee54f38371640ae8329ed730abb3
+      internalID: -1840525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_20
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1790
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0e2203c9b5cc64a9b490a045107160
+      internalID: -847136319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_21
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1758
+        width: 48
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63af3f3661975814bb9361680e0d5be2
+      internalID: 11924727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1758
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ef508b2bf6f3d4bbb5855ac1731805
+      internalID: -1467033773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_23
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1758
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937047ad495afd941a39edf3e613cde1
+      internalID: 1537645058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_24
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1764
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a157c5a49f410409cd892d88511188
+      internalID: -317646595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_25
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1758
+        width: 30
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5685ad76b41e4a84a91e4e09606cf27a
+      internalID: 181070366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_26
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1758
+        width: 66
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bad6ad543348724699ea31cb6da6ed4
+      internalID: -1842973285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_27
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1758
+        width: 36
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01efbd2e11f995f4abcd23e47a2b7e83
+      internalID: -352370260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_28
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1704
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da81741434a36274790735a5b6ca8129
+      internalID: 298339834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_29
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1712
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d71eab3c65dc0408d2859926bd7ef9
+      internalID: -1437058918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_30
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1707
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74a8cca1fe43b046b58d09648d14ee1
+      internalID: 799245543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_31
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1694
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073348ea068e69649a88ac1850179809
+      internalID: -119494816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1588
+        width: 162
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7bb3f8a07a9ce4f935fcd64c9a79ac
+      internalID: 29690660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_33
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1588
+        width: 82
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5409bdfd2bfa24440ab701e43e23638c
+      internalID: 932347304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_34
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1584
+        width: 70
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102979a434cae3a45ba29c82a9578b95
+      internalID: -821154819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_35
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1618
+        width: 36
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c2a2f6b9a476540bb6b75bea6edebc
+      internalID: -1102229034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_36
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1584
+        width: 8
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97579dba7b197c648890046b67024a5c
+      internalID: -1669853044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_37
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1587
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c573cc8492c0cb84dae3bfc29b86271b
+      internalID: -2021264827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_38
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1578
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a0f3a44778dba4fbff236d239be820
+      internalID: -452819814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_39
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1554
+        width: 54
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffd96f1c3b9f6a4d9f452ff53d81eae
+      internalID: -406155823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_40
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1572
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda1eb7a972650844ab689189cc6802a
+      internalID: 111195320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_41
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1554
+        width: 54
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b99739613632840b4fc2351710d7b1
+      internalID: 2015133778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_42
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1560
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc6f28d3e5bb8648a9d691e6f179a8b
+      internalID: -835018139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_43
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1560
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a129b3a7f3d0efc4d97f8d1fe839e7af
+      internalID: -635754742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_44
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1566
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b233282d68246542ac6820e4700536b
+      internalID: -366372682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_45
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1554
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2c818100b27a84fad8c7a2527df815
+      internalID: -1336389290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_46
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1560
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684a969eb6c1e1a46b3f08d828915c46
+      internalID: -889435543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_47
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1554
+        width: 48
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98979733b317ee948af0c7b183f7cb70
+      internalID: 1018579966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_48
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1554
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848f9ec410e0659409655f1e5359ca9b
+      internalID: 1046512244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_49
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1531
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2587e341ab645334f992c47d64a28b77
+      internalID: -647448507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_50
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1522
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7003da48266ad1459db7a6ef955c2fa
+      internalID: -2025033065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_51
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1522
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00f688927e27a34db1e44c62b3b1ff5
+      internalID: -695406682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_52
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1527
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d6b6fb257b3714ea25b45dc4bc9cce
+      internalID: 489677033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_53
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1464
+        width: 36
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c71e82d51a4114ea0fb865125a2612
+      internalID: -755608353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_54
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 1500
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008300b669d523749bb9746a5bf815b7
+      internalID: 993642958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_55
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1404
+        width: 232
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011e4d6f6325951488c56a296f96d123
+      internalID: 276224024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_56
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1408
+        width: 138
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24de2e208604cd64e9c52b9a2e4d2f9c
+      internalID: 306892774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_57
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1408
+        width: 70
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0410b8a0cdb18f74ba365a52c15d2f35
+      internalID: 304594951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_58
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1408
+        width: 77
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f1e706ed25ce7459f3a62b9879b593
+      internalID: -149341087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_59
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1437
+        width: 33
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723efd5650128bc45af49247721fc5a9
+      internalID: 963807552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_60
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1374
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7de37b0d4c330541ac4117e3b093a8a
+      internalID: -734261540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_61
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 1393
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a19d85a2c9dac4398deb2854f67011
+      internalID: -2144433440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_62
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1398
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c3a8edc38b9e54aa9d576f288d138e
+      internalID: 1795658659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_63
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1374
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585afe6006400bb41b3e746198c19cc8
+      internalID: 2141905509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_64
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1392
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81585f8cd4564f84187339e4be6fcfcf
+      internalID: -1480682021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_65
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1392
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cb4e3e7b097dd4798727c51148beef
+      internalID: 550948473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_66
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1386
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce90edd1f53483d438fd961ea07ada02
+      internalID: -949206914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_67
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1386
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd8e56d3b6d2ed47bde890a53b78d1c
+      internalID: 203461778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_68
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1380
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c858dd430763bc41932c2a9e6d10ac2
+      internalID: 1416771912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_69
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1374
+        width: 60
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36e0a28f3b50aa4cb50096f1c482630
+      internalID: 1581154660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_70
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1374
+        width: 48
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a9868ec42c095498eb1a295304c572
+      internalID: -1281000644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_71
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1374
+        width: 48
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8edd901f18b2443bd26ecaf481f117
+      internalID: -1288441566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_72
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1380
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e524a3b69c09abe47af105fba1ac7ed6
+      internalID: -1905861490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_73
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1374
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d763ba4f9acecf46a88475b9e122850
+      internalID: -1369150458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_74
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1374
+        width: 60
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43947c118cb0e054eb59d9f46c1c7dcb
+      internalID: 1871189276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_75
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1374
+        width: 66
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf63226b308a754d851fcaf84b67b8a
+      internalID: 2127525900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_76
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1353
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47334621ede7e3446a97fdc8abf7a098
+      internalID: -1899771394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_77
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1338
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb4ecbbf091dd9479d388c5f6df7802
+      internalID: 2037649893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_78
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1351
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3447066524d9a9c40aa002f5752e17e3
+      internalID: -109695590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_79
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1351
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615a368d11fdf32459ebf3408a46c0db
+      internalID: 956285046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_80
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1350
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a57a0b5edd391458ec5aefa6e66274
+      internalID: 175510738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_81
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1354
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6534d3f8fc0ce14c8ada1128efad4b1
+      internalID: 467472543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_82
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1260
+        width: 30
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a4165ada6fa6449b69b4b5def4918c
+      internalID: -2016779943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_83
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1345
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d9870abb2a2c344b3110f1c5c848bb
+      internalID: -451025965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_84
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1224
+        width: 91
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0beed41e8286ee47ac055dc25900934
+      internalID: -1851202501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_85
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1228
+        width: 80
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c06c680e0532f49bac6f9b93f4dce8
+      internalID: -127899972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_86
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1224
+        width: 86
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cf2979f6b94bf49bcab3c35e2c49f1
+      internalID: 1873700453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_87
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1224
+        width: 90
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3bef257f338c840be4e50222b24889
+      internalID: 1416572025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_88
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1207
+        width: 159
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b59fd1dbb293540a373a7e187f98a4
+      internalID: 2082971980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_89
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1228
+        width: 33
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d62c192743fa846be2385deda541ee
+      internalID: -535158626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_90
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1227
+        width: 86
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb08a75fd0c1f8b4ebe63d7640971f1f
+      internalID: 730379452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_91
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1258
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa5cabc7abc4e74cb56c2fa5b9a28a7
+      internalID: -1326884469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_92
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1194
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9413ce0c6c106c469d111b7015f625a
+      internalID: -2015919669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_93
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1194
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5e16bbccef34a4ebe5ea92963e31d6
+      internalID: -1287235981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_94
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1194
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec2158051322a74699ab5eeedc3a937
+      internalID: 1290471229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_95
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1200
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c75d8c58714474aafab8069191ff90
+      internalID: 1129484228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_96
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1194
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bc32bfaed261747ad13deaedf05537
+      internalID: 985218359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_97
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1194
+        width: 42
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5135427f3236fb498e46350f0d4f739
+      internalID: -1391012657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_98
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1194
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc06ff6cfefdb5b4fa4cff9dbfdeb5d3
+      internalID: 1313929400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_99
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1194
+        width: 90
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543279a9906a8934f8b02792880e25af
+      internalID: -2051299917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_100
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1194
+        width: 108
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6cb4ca7894d1f40b30f5c5857f4d70
+      internalID: 1915026162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_101
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1194
+        width: 108
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b537f51a71c2cfd44a946228bd4ee4cb
+      internalID: -2016218745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_102
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1008
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4675e5730d28f98499a1ebe63ba2c33c
+      internalID: 751002810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_103
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 809
+        width: 277
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dd2b19ec1ada44d8298fd080029454
+      internalID: 1652118063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_104
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1014
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9b2de65b0bc1b4780bc876f18572e2
+      internalID: 1761092432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_105
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 990
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d574e468a3a034b8cc16f5ed745199
+      internalID: -905018964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_106
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 809
+        width: 278
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994956ac0057dfc44b5fcae13431cb1d
+      internalID: 1502964210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_107
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1002
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3318e9171c2a6924c9dcc2d5dc6f6471
+      internalID: 304923799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_108
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 966
+        width: 12
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345196ee778255d47906bd0480d235e1
+      internalID: -1591518573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_109
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 916
+        width: 9
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea6b0c7945380e48b4852c8a2e559b3
+      internalID: 846404378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_110
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 903
+        width: 7
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255e7c2e3e99aa54caca65abf3291bcc
+      internalID: 1302856954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_111
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 798
+        width: 90
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca201bbb4b7a654a91d233a69ed72a8
+      internalID: 77750279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_112
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 865
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099f33e2716ed294795415c6f6e60ccf
+      internalID: -1947906957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_113
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 883
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033af8dde17c06b4e807113fa657dd30
+      internalID: -1568356270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_114
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 889
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78287d65185ff045a159aabe1acf894
+      internalID: -174174914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_115
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 872
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6231402212da9746a40c0d5c9304570
+      internalID: -132501629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_116
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 859
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49429a3d4361aa43af1ae5c9e78dace
+      internalID: -1331463752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_117
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 804
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512d0797b2d041845b080876b49ab6a5
+      internalID: -671278384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_118
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 799
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db2993adbafdfc4289e67dd21d2b4cf
+      internalID: -1734601794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_119
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 805
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98dc8d5ab6ccd44db0e522b869814f5
+      internalID: -1451315104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_120
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 781
+        width: 53
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fab00e57e9561a4e891d360b0b55c32
+      internalID: -323815487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_121
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 792
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2235afcb52eb7314591c3db40529c573
+      internalID: -906246882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_122
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 778
+        width: 108
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff15e712936655d4e912ca5a4fdd82cb
+      internalID: 1222254168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_123
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 786
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bb9d24623df6549a1cce84fa311361
+      internalID: -1811204097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_124
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 787
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902b31b7906707a4597dd40f2d292a19
+      internalID: -1590309673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_125
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 778
+        width: 75
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0f8593ac8a426449f3481d0e1c0c76
+      internalID: -52779572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_126
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 780
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e5e0cf3bf86524c81a0f325e7db8c6
+      internalID: 1205926093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_127
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 586
+        width: 295
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579403ed90e8efb4da0e97ba59a3781b
+      internalID: -801876956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_128
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 494
+        width: 96
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb057570b13098b42b8eff2c884c1cac
+      internalID: 1183725050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_129
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 386
+        width: 368
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601cb5e11a116244e9575b4c2da7f517
+      internalID: -1692824501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_130
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 475
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0db35941a392843b400e54614c7ade
+      internalID: 1588071857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_131
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 475
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7121c839f02ac17449cfaa75b7dc5988
+      internalID: -1786810437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_132
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 468
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1933ca63b31999468e6a2839d155e6c
+      internalID: -1200826185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_133
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 468
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a63438ed84892545a3749c55997247f
+      internalID: 2063743504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_134
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 456
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebed6b43f66052c419676017219b0224
+      internalID: -1683528762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_135
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 456
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ecc5afd0c99ae47999e72824bef0eb
+      internalID: 1536637110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_136
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 445
+        width: 104
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf6839dd1942764f9d1b39bd92861f3
+      internalID: -2062311657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_137
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 269
+        width: 70
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683eb220487ec3f4bae545e83be8df01
+      internalID: 527044966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_138
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 269
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4904882c34b548e43818a7de70dd2640
+      internalID: 2091571519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_139
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 269
+        width: 150
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30596d5d6a281c940acc4a542506382d
+      internalID: -2058435173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_140
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 269
+        width: 175
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3627aa50b41e1074e88185d82b29e73c
+      internalID: 545401112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_141
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 299
+        width: 35
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41961c2424adfe540b963ca2940667c4
+      internalID: -473174161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_142
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 264
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6094a1aecc6aae4d921760723844028
+      internalID: 1017416479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_143
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 120
+        width: 118
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baff885f4d06392469f4096d62267a2e
+      internalID: -912929229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_144
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 95
+        width: 80
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e95baf1c8c606e4eb06b5fd8c435e91
+      internalID: 764569529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_145
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 120
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082ed32e357c5db47b5589044c83ca64
+      internalID: 1888151876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_146
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 120
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d3664ccd19d66449ee5bc58a967a65
+      internalID: 544233461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_147
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 120
+        width: 32
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896a975445a049e4aa4a3fdfcfbe63b4
+      internalID: 253750946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_148
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 120
+        width: 149
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b2a8cfb6e23d0468455fdbdda93f7f
+      internalID: -672454304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_149
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 120
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c283eb6056c80794c97dd3137e3d64c6
+      internalID: 1971373474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_150
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 120
+        width: 72
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de59e80947cf7d4e9d0775cb28df951
+      internalID: 247050862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_151
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 120
+        width: 72
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e15a3707f4ec47438b128e7f5a8c653
+      internalID: 407844221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_152
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 120
+        width: 85
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63236786f5410da438a2aea50260a9f7
+      internalID: 918302646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_153
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 120
+        width: 85
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc90ebf98db9e294f86865def2e335cf
+      internalID: 1922611963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_154
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 150
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945c6130e6ddf6c46b4963743b42c3bb
+      internalID: 134856358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_155
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 66
+        width: 85
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c814c139116dc09418aad95dd1aa0a92
+      internalID: 1430925461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_156
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 66
+        width: 84
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187f83872bc160e4d9f1ad6492dc144a
+      internalID: 643005695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_157
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 66
+        width: 203
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b667bf24d46b442989142b2e8b292f
+      internalID: -894456586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_158
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 67
+        width: 32
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0da942a65932d42a4b7ba666710919
+      internalID: 1631812964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_159
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 67
+        width: 76
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf5f83cced98464dbc73ad91a2f54e6
+      internalID: -610602182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_160
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 96
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed47a490719c00419ebb7de2715ea7f
+      internalID: 677653191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_161
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 120
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a955c50ba79b934ca1e328d24cb3c23
+      internalID: -1640195795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveMe_162
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 66
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c150506fc0c23e14c9e0d83ab45429db
+      internalID: -1153296633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SaveMe_0: 479112348
+      SaveMe_1: -1015607336
+      SaveMe_10: -1156131574
+      SaveMe_100: 1915026162
+      SaveMe_101: -2016218745
+      SaveMe_102: 751002810
+      SaveMe_103: 1652118063
+      SaveMe_104: 1761092432
+      SaveMe_105: -905018964
+      SaveMe_106: 1502964210
+      SaveMe_107: 304923799
+      SaveMe_108: -1591518573
+      SaveMe_109: 846404378
+      SaveMe_11: -1077536846
+      SaveMe_110: 1302856954
+      SaveMe_111: 77750279
+      SaveMe_112: -1947906957
+      SaveMe_113: -1568356270
+      SaveMe_114: -174174914
+      SaveMe_115: -132501629
+      SaveMe_116: -1331463752
+      SaveMe_117: -671278384
+      SaveMe_118: -1734601794
+      SaveMe_119: -1451315104
+      SaveMe_12: 63051724
+      SaveMe_120: -323815487
+      SaveMe_121: -906246882
+      SaveMe_122: 1222254168
+      SaveMe_123: -1811204097
+      SaveMe_124: -1590309673
+      SaveMe_125: -52779572
+      SaveMe_126: 1205926093
+      SaveMe_127: -801876956
+      SaveMe_128: 1183725050
+      SaveMe_129: -1692824501
+      SaveMe_13: 1092620584
+      SaveMe_130: 1588071857
+      SaveMe_131: -1786810437
+      SaveMe_132: -1200826185
+      SaveMe_133: 2063743504
+      SaveMe_134: -1683528762
+      SaveMe_135: 1536637110
+      SaveMe_136: -2062311657
+      SaveMe_137: 527044966
+      SaveMe_138: 2091571519
+      SaveMe_139: -2058435173
+      SaveMe_14: 512699396
+      SaveMe_140: 545401112
+      SaveMe_141: -473174161
+      SaveMe_142: 1017416479
+      SaveMe_143: -912929229
+      SaveMe_144: 764569529
+      SaveMe_145: 1888151876
+      SaveMe_146: 544233461
+      SaveMe_147: 253750946
+      SaveMe_148: -672454304
+      SaveMe_149: 1971373474
+      SaveMe_15: -776052369
+      SaveMe_150: 247050862
+      SaveMe_151: 407844221
+      SaveMe_152: 918302646
+      SaveMe_153: 1922611963
+      SaveMe_154: 134856358
+      SaveMe_155: 1430925461
+      SaveMe_156: 643005695
+      SaveMe_157: -894456586
+      SaveMe_158: 1631812964
+      SaveMe_159: -610602182
+      SaveMe_16: -1715474254
+      SaveMe_160: 677653191
+      SaveMe_161: -1640195795
+      SaveMe_162: -1153296633
+      SaveMe_17: -1038771055
+      SaveMe_18: 1769835987
+      SaveMe_19: -1840525
+      SaveMe_2: 1463000872
+      SaveMe_20: -847136319
+      SaveMe_21: 11924727
+      SaveMe_22: -1467033773
+      SaveMe_23: 1537645058
+      SaveMe_24: -317646595
+      SaveMe_25: 181070366
+      SaveMe_26: -1842973285
+      SaveMe_27: -352370260
+      SaveMe_28: 298339834
+      SaveMe_29: -1437058918
+      SaveMe_3: -247576263
+      SaveMe_30: 799245543
+      SaveMe_31: -119494816
+      SaveMe_32: 29690660
+      SaveMe_33: 932347304
+      SaveMe_34: -821154819
+      SaveMe_35: -1102229034
+      SaveMe_36: -1669853044
+      SaveMe_37: -2021264827
+      SaveMe_38: -452819814
+      SaveMe_39: -406155823
+      SaveMe_4: -1952796490
+      SaveMe_40: 111195320
+      SaveMe_41: 2015133778
+      SaveMe_42: -835018139
+      SaveMe_43: -635754742
+      SaveMe_44: -366372682
+      SaveMe_45: -1336389290
+      SaveMe_46: -889435543
+      SaveMe_47: 1018579966
+      SaveMe_48: 1046512244
+      SaveMe_49: -647448507
+      SaveMe_5: -871824949
+      SaveMe_50: -2025033065
+      SaveMe_51: -695406682
+      SaveMe_52: 489677033
+      SaveMe_53: -755608353
+      SaveMe_54: 993642958
+      SaveMe_55: 276224024
+      SaveMe_56: 306892774
+      SaveMe_57: 304594951
+      SaveMe_58: -149341087
+      SaveMe_59: 963807552
+      SaveMe_6: -1954133696
+      SaveMe_60: -734261540
+      SaveMe_61: -2144433440
+      SaveMe_62: 1795658659
+      SaveMe_63: 2141905509
+      SaveMe_64: -1480682021
+      SaveMe_65: 550948473
+      SaveMe_66: -949206914
+      SaveMe_67: 203461778
+      SaveMe_68: 1416771912
+      SaveMe_69: 1581154660
+      SaveMe_7: -96641788
+      SaveMe_70: -1281000644
+      SaveMe_71: -1288441566
+      SaveMe_72: -1905861490
+      SaveMe_73: -1369150458
+      SaveMe_74: 1871189276
+      SaveMe_75: 2127525900
+      SaveMe_76: -1899771394
+      SaveMe_77: 2037649893
+      SaveMe_78: -109695590
+      SaveMe_79: 956285046
+      SaveMe_8: -948664388
+      SaveMe_80: 175510738
+      SaveMe_81: 467472543
+      SaveMe_82: -2016779943
+      SaveMe_83: -451025965
+      SaveMe_84: -1851202501
+      SaveMe_85: -127899972
+      SaveMe_86: 1873700453
+      SaveMe_87: 1416572025
+      SaveMe_88: 2082971980
+      SaveMe_89: -535158626
+      SaveMe_9: -2101093864
+      SaveMe_90: 730379452
+      SaveMe_91: -1326884469
+      SaveMe_92: -2015919669
+      SaveMe_93: -1287235981
+      SaveMe_94: 1290471229
+      SaveMe_95: 1129484228
+      SaveMe_96: 985218359
+      SaveMe_97: -1391012657
+      SaveMe_98: 1313929400
+      SaveMe_99: -2051299917
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

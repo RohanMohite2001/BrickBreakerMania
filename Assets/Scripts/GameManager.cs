@@ -3,17 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI livesText;
+    [SerializeField] private TextMeshProUGUI increamentScoreText;
+
 
     [SerializeField] private Transform startingPos;
     [SerializeField] private GameObject brickPrefab;
     [SerializeField] private GameObject bricksSpace;
     public Ball ball;
+    private Vector3 incrementTextOriginalPos;
     
     public int score = 0;
     public int lives = 0;
@@ -22,6 +26,7 @@ public class GameManager : MonoBehaviour
     
     private void Awake()
     {
+        incrementTextOriginalPos = increamentScoreText.rectTransform.position;
         Instance = this;
     }
 
@@ -82,6 +87,17 @@ public class GameManager : MonoBehaviour
         float remainingSpace = spaceBound - totalBrickSize;
 
         return remainingSpace / count;
+    }
+
+    public void IncreamentPoints()
+    {
+        increamentScoreText.rectTransform.DOScale(1, .3f).OnComplete(()=>
+        {
+            increamentScoreText.rectTransform.DOMove(scoreText.rectTransform.position, .8f).SetDelay(.5f)
+                .SetEase(Ease.OutBack).OnComplete((() => increamentScoreText.rectTransform.DOScale(0, .3f)));
+        });
+        ShowScore(5);
+        increamentScoreText.rectTransform.position = incrementTextOriginalPos;
     }
     
     private bool WithinBricksSpace(Vector3 position)
