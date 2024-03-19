@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Vector2 force;
+    [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private float speed = 400f;
     private Vector2 startingPos;
     public Slider slider;
@@ -39,6 +40,7 @@ public class Ball : MonoBehaviour
         speed += 10f;
         if (other.gameObject.CompareTag("Brick"))
         {
+            Instantiate(explosionPrefab, other.transform.position, other.transform.rotation);
             other.gameObject.SetActive(false);
             GameManager.Instance.ShowScore(1);
         }
