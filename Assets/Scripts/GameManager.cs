@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI livesText;
     [SerializeField] private TextMeshProUGUI increamentScoreText;
 
+    [SerializeField] private Transform camera;
+    [SerializeField] private Vector3 positionStrength;
 
     [SerializeField] private Transform startingPos;
     [SerializeField] private GameObject brickPrefab;
@@ -81,6 +83,11 @@ public class GameManager : MonoBehaviour
         // }
     }
 
+    private void CameraShake()
+    {
+        camera.DOShakePosition(.3f, positionStrength);
+    }
+
     private float CalculateGap(float spaceBound, int count, float brickSize)
     {
         float totalBrickSize = count * brickSize;
@@ -98,6 +105,7 @@ public class GameManager : MonoBehaviour
         });
         ShowScore(5);
         increamentScoreText.rectTransform.position = incrementTextOriginalPos;
+        CameraShake();
     }
     
     private bool WithinBricksSpace(Vector3 position)
