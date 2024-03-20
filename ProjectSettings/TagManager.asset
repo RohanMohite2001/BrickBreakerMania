@@ -12,6 +12,7 @@ TagManager:
   - ScalePowerUp
   - BlockPowerUp
   - Block
+  - Star
   layers:
   - Default
   - TransparentFX

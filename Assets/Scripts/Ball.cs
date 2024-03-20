@@ -13,6 +13,7 @@ public class Ball : MonoBehaviour
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private GameObject powerUpScale;
     [SerializeField] private GameObject powerUpBlock;
+    [SerializeField] private GameObject star;
     [SerializeField] public float speed = 400f;
     [SerializeField] private Vector3 startingPos;
     [SerializeField] private int scaleProbabilityTime = 10;
@@ -20,7 +21,8 @@ public class Ball : MonoBehaviour
 
     [SerializeField] private ParticleSystem brickExplosion;
     public Slider slider;
-
+    public bool inPlay;
+    [SerializeField] private GameObject ballPos;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,7 +34,7 @@ public class Ball : MonoBehaviour
         StartLevel();
     }
 
-    private void StartLevel()
+    public void StartLevel()
     {
         gameObject.SetActive(true);
         transform.position = startingPos;
@@ -42,13 +44,29 @@ public class Ball : MonoBehaviour
         force = Vector2.zero;
         force.x = Random.Range(-1f, 1f);
         force.y = -1f;
-        rb.AddForce(force.normalized * speed);
+        // rb.AddForce(force.normalized * speed);
+        
+    }
+
+    private void Update()
+    {
+        if (!inPlay)
+        {
+            transform.position = ballPos.transform.position;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && !inPlay)
+        {
+            inPlay = true;
+            rb.AddForce(force.normalized * speed);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Brick"))
         {
+            GameManager.Instance.brickCount++;
             //power-up
             int probability = Random.Range(1, 100);
             if (probability < scaleProbabilityTime)
@@ -60,6 +78,11 @@ public class Ball : MonoBehaviour
                 Instantiate(powerUpBlock, other.transform.position, other.transform.rotation);
             }
 
+            if (probability < 20 && probability > 10 && GameManager.Instance.stars < 3)
+            {
+                Instantiate(star, other.transform.position, other.transform.rotation);
+            }
+            
             //explosion effect
             brickExplosion.transform.position = other.transform.position;
             brickExplosion.gameObject.SetActive(true);
@@ -73,7 +96,8 @@ public class Ball : MonoBehaviour
         if (other.gameObject.CompareTag("MissZone"))
         {
             AudioManager.Instance.PlaySfx(AudioManager.Instance.buzzer);
-            
+
+            inPlay = false;
             gameObject.SetActive(false);
             
             GameManager.Instance.CameraShake();

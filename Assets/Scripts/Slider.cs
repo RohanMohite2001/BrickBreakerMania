@@ -46,8 +46,8 @@ public class Slider : MonoBehaviour
     {
         if (direction != Vector2.zero)
         {
-            rb.AddForce(direction * speed);
-            //transform.Translate(direction * speed * Time.deltaTime);
+            //rb.AddForce(direction * speed);
+            transform.Translate(direction * speed * Time.deltaTime);
         }
     }
 
@@ -87,6 +87,13 @@ public class Slider : MonoBehaviour
             Destroy(other.gameObject);
             block.gameObject.SetActive(true);
             StartCoroutine(PowerUpBlockTimer(5));
+        }
+
+        if (other.gameObject.CompareTag("Star"))
+        {
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
+            Destroy(other.gameObject);
+            GameManager.Instance.stars += 1;
         }
     }
 
