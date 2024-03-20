@@ -713,11 +713,14 @@ MonoBehaviour:
   star1: {fileID: 1140952967}
   star2: {fileID: 1273196921}
   star3: {fileID: 1675160731}
-  winningStars: []
+  winningStars:
+  - {fileID: 1737348840}
+  - {fileID: 158760601}
+  - {fileID: 2057438656}
   stars: 0
   lives: 0
-  rows: 1
-  columns: 2
+  rows: 4
+  columns: 4
   brickCount: 0
 --- !u!4 &155929350
 Transform:

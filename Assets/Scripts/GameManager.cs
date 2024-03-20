@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        winningStars = new Image[3]; 
+        winningStars = new Image[winningStars.Length]; 
         NewGame();
     }
 
@@ -111,10 +111,10 @@ public class GameManager : MonoBehaviour
     public void Win()
     {
         winningPanel.SetActive(true);
-        for (int i = 0; i < stars; i++)
-        {
-            winningStars[0].gameObject.SetActive(true);
-        }
+        // for (int i = 0; i < stars; i++)
+        // {
+        //     winningStars[0].gameObject.SetActive(true);
+        // }
         ball.gameObject.SetActive(false);
     }
 
