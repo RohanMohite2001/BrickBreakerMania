@@ -9,7 +9,9 @@ TagManager:
   - Ball
   - MissZone
   - FxTemporaire
-  - PowerUp
+  - ScalePowerUp
+  - BlockPowerUp
+  - Block
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - PowerUp
   - 
   - 
   - 

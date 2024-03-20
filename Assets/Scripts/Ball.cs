@@ -11,13 +11,16 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 force;
     [SerializeField] private GameObject explosionPrefab;
-    [SerializeField] private GameObject powerUp;
-    [SerializeField] private float speed = 400f;
+    [SerializeField] private GameObject powerUpScale;
+    [SerializeField] private GameObject powerUpBlock;
+    [SerializeField] public float speed = 400f;
     [SerializeField] private Vector3 startingPos;
-    [SerializeField] private int probabilityTime = 10;
+    [SerializeField] private int scaleProbabilityTime = 10;
+    [SerializeField] private int blockProbabilityTime = 80;
+
     [SerializeField] private ParticleSystem brickExplosion;
-    [SerializeField] private int brickCount = 0;
     public Slider slider;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,8 +32,9 @@ public class Ball : MonoBehaviour
         StartLevel();
     }
 
-    public void StartLevel()
+    private void StartLevel()
     {
+        gameObject.SetActive(true);
         transform.position = startingPos;
         speed = 300f;
         slider.transform.position = slider.startingPos;
@@ -38,7 +42,6 @@ public class Ball : MonoBehaviour
         force = Vector2.zero;
         force.x = Random.Range(-1f, 1f);
         force.y = -1f;
-        
         rb.AddForce(force.normalized * speed);
     }
 
@@ -46,40 +49,49 @@ public class Ball : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Brick"))
         {
+            //power-up
             int probability = Random.Range(1, 100);
-            if (probability < probabilityTime)
+            if (probability < scaleProbabilityTime)
             {
-                Instantiate(powerUp, other.transform.position, other.transform.rotation);
+                Instantiate(powerUpScale, other.transform.position, other.transform.rotation);
             }
-            //Instantiate(explosionPrefab, other.transform.position, other.transform.rotation);
+            if (probability > blockProbabilityTime)
+            {
+                Instantiate(powerUpBlock, other.transform.position, other.transform.rotation);
+            }
+
+            //explosion effect
             brickExplosion.transform.position = other.transform.position;
             brickExplosion.gameObject.SetActive(true);
             brickExplosion.Play();
-            AudioManager.Instance.PlaySFX(AudioManager.Instance.brickDestroySFX);
+            
+            //Brick sfx
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.tap);
             other.gameObject.SetActive(false);
-
-            brickCount++;
-
-            if (brickCount == 5)
-            {
-                GameManager.Instance.IncreamentPoints();
-                brickCount = 0;
-                return;
-            }
-            GameManager.Instance.ShowScore(1);
         }
         
         if (other.gameObject.CompareTag("MissZone"))
         {
-            GameManager.Instance.ShowLives(-1);
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.buzzer);
+            
+            gameObject.SetActive(false);
+            
+            GameManager.Instance.CameraShake();
+            GameManager.Instance.lives -= 1;
             if (GameManager.Instance.lives > 0)
             {
-                Invoke("StartLevel", .2f);
-            }else if (GameManager.Instance.lives <= 0)
+                Invoke(nameof(StartLevel), 1f);
+            }
+            else if (GameManager.Instance.lives <= 0)
             {
                 Debug.Log("GameOver");
                 gameObject.SetActive(false);
             }
+        }
+
+        if (other.gameObject.CompareTag("Block"))
+        {
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.tap);
         }
     }
 }

@@ -7,14 +7,16 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
     public AudioSource audioSource;
-    public AudioClip brickDestroySFX;
+    public AudioClip tap;
+    public AudioClip powerUpSfx;
+    public AudioClip buzzer;
 
     private void Awake()
     {
         Instance = this;
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlaySfx(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
     }

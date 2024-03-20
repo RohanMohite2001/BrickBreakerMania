@@ -14,6 +14,7 @@ public class Slider : MonoBehaviour
     public Vector3 startingPos;
     public Vector3 originalScale;
     private float powerUpCollectTime;
+    [SerializeField] private GameObject block;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,8 +46,8 @@ public class Slider : MonoBehaviour
     {
         if (direction != Vector2.zero)
         {
-            //rb.AddForce(direction * speed);
-            transform.Translate(direction * speed * Time.deltaTime);
+            rb.AddForce(direction * speed);
+            //transform.Translate(direction * speed * Time.deltaTime);
         }
     }
 
@@ -54,8 +55,10 @@ public class Slider : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ball"))
         {
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.tap);
+            
             float contactPoint = transform.position.x - other.GetContact(0).point.x;
-            float centre = other.otherCollider.bounds.size.x / 2;
+            float centre = gameObject.GetComponent<BoxCollider2D>().bounds.size.x / 2;
 
             float currentAngle = Vector2.SignedAngle(Vector2.up, other.gameObject.GetComponent<Rigidbody2D>().velocity);
             float bounceAngle = (contactPoint / centre) * maxBouncingAngle;
@@ -66,20 +69,37 @@ public class Slider : MonoBehaviour
                                                                    other.gameObject.GetComponent<Rigidbody2D>().velocity
                                                                        .magnitude;
         }
-        
-        
-        if (other.gameObject.CompareTag("PowerUp"))
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("ScalePowerUp"))
         {
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
             Destroy(other.gameObject);
             transform.localScale += new Vector3(.2f, 0, 0);
-            StartCoroutine(PowerUpTimer(5f));
+            StartCoroutine(PowerUpScaleTimer(5f));
+        }
+
+        if (other.gameObject.CompareTag("BlockPowerUp"))
+        {
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
+            Destroy(other.gameObject);
+            block.gameObject.SetActive(true);
+            StartCoroutine(PowerUpBlockTimer(5));
         }
     }
 
-    private IEnumerator PowerUpTimer(float time)
+    private IEnumerator PowerUpScaleTimer(float time)
     {
         yield return new WaitForSeconds(time);
         transform.localScale = originalScale;
         Debug.Log("Size resets");
+    }
+    
+    private IEnumerator PowerUpBlockTimer(float time)
+    {
+        yield return new WaitForSeconds(time);
+        block.gameObject.SetActive(false);
     }
 }

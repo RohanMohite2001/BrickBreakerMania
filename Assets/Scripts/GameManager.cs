@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject bricksSpace;
     public Ball ball;
     private Vector3 incrementTextOriginalPos;
+
+    [SerializeField] private Image live1, live2, live3;
     
     public int score = 0;
     public int lives = 0;
@@ -37,12 +40,41 @@ public class GameManager : MonoBehaviour
         NewGame();
     }
 
+    private void Update()
+    {
+        switch (lives)
+        {
+            case 3: 
+                live1.gameObject.SetActive(true);
+                live2.gameObject.SetActive(true);
+                live3.gameObject.SetActive(true);
+                break;
+            case 2:
+                live1.gameObject.SetActive(false);
+                live2.gameObject.SetActive(true);
+                live3.gameObject.SetActive(true);
+                break;
+            case 1:
+                live1.gameObject.SetActive(false);
+                live2.gameObject.SetActive(false);
+                live3.gameObject.SetActive(true);
+                break;
+            case 0:
+                live1.gameObject.SetActive(false);
+                live2.gameObject.SetActive(false);
+                live3.gameObject.SetActive(false);
+                Debug.Log("Game Over");
+                break;
+        }
+    }
+
     private void NewGame()
     {
+        live1.gameObject.SetActive(true);
+        live2.gameObject.SetActive(true);
+        live3.gameObject.SetActive(true);
         lives = 3;
         score = 0;
-        ShowLives(0);
-        ShowScore(0);
         Instantiate_Bricks(rows, columns);
     }
 
@@ -70,20 +102,9 @@ public class GameManager : MonoBehaviour
             }
             startingPos.position += new Vector3(0, brickHeight + columnGap, 0);
         }
-        
-        // for (int row = 0; row < rows; row++)
-        // {
-        //     for (int column = 0; column < columns; column++)
-        //     {
-        //         instantiatePos = startingpos.position + new Vector3(column * 2.5f, 0, 0);
-        //         Instantiate(brickPrefab, instantiatePos, Quaternion.identity);
-        //     }
-        //
-        //     startingpos.position += new Vector3(0, 1, 0);
-        // }
     }
 
-    private void CameraShake()
+    public void CameraShake()
     {
         camera.DOShakePosition(.3f, positionStrength);
     }
@@ -95,35 +116,11 @@ public class GameManager : MonoBehaviour
 
         return remainingSpace / count;
     }
-
-    public void IncreamentPoints()
-    {
-        increamentScoreText.rectTransform.DOScale(1, .3f).OnComplete(()=>
-        {
-            increamentScoreText.rectTransform.DOMove(scoreText.rectTransform.position, .8f).SetDelay(.5f)
-                .SetEase(Ease.OutBack).OnComplete((() => increamentScoreText.rectTransform.DOScale(0, .3f)));
-        });
-        ShowScore(5);
-        increamentScoreText.rectTransform.position = incrementTextOriginalPos;
-        CameraShake();
-    }
     
     private bool WithinBricksSpace(Vector3 position)
     {
         Bounds bound = bricksSpace.GetComponent<SpriteRenderer>().bounds;
 
         return bound.Contains(position);
-    }
-
-    public void ShowScore(int score)
-    {
-        this.score += score;
-        scoreText.text = "Score : " + this.score.ToString();
-    }
-    
-    public void ShowLives(int lives)
-    {
-        this.lives += lives;
-        livesText.text = "Lives : " + this.lives.ToString();
     }
 }
