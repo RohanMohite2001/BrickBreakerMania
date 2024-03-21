@@ -9,12 +9,18 @@ public class Slider : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Vector2 direction;
-    [SerializeField] private float speed = 30f;
+    [SerializeField] private float speed = 0f;
     private float maxBouncingAngle = 75f;
     public Vector3 startingPos;
     public Vector3 originalScale;
     private float powerUpCollectTime;
     [SerializeField] private GameObject block;
+    [SerializeField] private float touchMoveThreshold = 10f;
+
+    private bool isDragging = false;
+    private Vector2 touchStartPos;
+    private Vector2 touchEndPos;
+    private Vector2 previousTouchPosition;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,13 +34,50 @@ public class Slider : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        // if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        // {
+        //     direction = Vector2.left;
+        // }
+        // else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        // {
+        //     direction = Vector2.right;
+        // }
+
+
+        if (Input.touchCount > 0)
         {
-            direction = Vector2.left;
-        }
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            direction = Vector2.right;
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                isDragging = true;
+                touchStartPos = touch.position;
+                previousTouchPosition = touch.position;
+            }
+            else if(touch.phase == TouchPhase.Moved)
+            {
+                if (isDragging)
+                {
+                    float touchDeltaX = touch.position.x - previousTouchPosition.x;
+
+                    if (Mathf.Abs(touchDeltaX) > touchMoveThreshold)
+                    {
+                        direction = new Vector2(touchDeltaX, 0).normalized;
+                        transform.Translate(direction * speed * Time.deltaTime);
+                        //rb.AddForce(direction * speed);
+                    }
+                    else
+                    {
+                        direction = Vector2.zero;
+                    }
+                    previousTouchPosition = touch.position;
+                }
+            }
+            else if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
+            {
+                isDragging = false;
+                direction = Vector2.zero;
+            }
         }
         else
         {
@@ -46,8 +89,7 @@ public class Slider : MonoBehaviour
     {
         if (direction != Vector2.zero)
         {
-            //rb.AddForce(direction * speed);
-            transform.Translate(direction * speed * Time.deltaTime);
+            
         }
     }
 

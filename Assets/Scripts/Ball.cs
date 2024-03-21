@@ -38,17 +38,17 @@ public class Ball : MonoBehaviour
     {
         gameObject.SetActive(true);
         transform.position = startingPos;
-        speed = 300f;
+        speed = 200f;
         slider.transform.position = slider.startingPos;
         slider.transform.localScale = slider.originalScale;
         force = Vector2.zero;
         force.x = Random.Range(-1f, 1f);
         force.y = -1f;
-        // rb.AddForce(force.normalized * speed);
+        rb.AddForce(force.normalized * speed);
         
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (!inPlay)
         {
@@ -60,7 +60,7 @@ public class Ball : MonoBehaviour
             inPlay = true;
             rb.AddForce(force.normalized * speed);
         }
-    }
+    }*/
 
     private void OnCollisionEnter2D(Collision2D other)
     {

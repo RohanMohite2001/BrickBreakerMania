@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI livesText;
-    [SerializeField] private TextMeshProUGUI increamentScoreText;
 
     [SerializeField] private Transform _camera;
     [SerializeField] private Vector3 positionStrength;
@@ -35,14 +34,21 @@ public class GameManager : MonoBehaviour
     
     private void Awake()
     {
-        incrementTextOriginalPos = increamentScoreText.rectTransform.position;
         Instance = this;
     }
 
     private void Start()
     {
+        Vector3 newScale = bricksSpace.gameObject.transform.localScale;
+        newScale.x = (float)Screen.width / (float)Screen.height * Camera.main.orthographicSize * 2f;
+        bricksSpace.gameObject.transform.localScale = newScale;
         winningStars = new Image[winningStars.Length]; 
         NewGame();
+    }
+
+    void AdjustBrickSpace()
+    {
+        
     }
 
     private void Update()
@@ -110,11 +116,11 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
-        winningPanel.SetActive(true);
         // for (int i = 0; i < stars; i++)
         // {
         //     winningStars[0].gameObject.SetActive(true);
         // }
+        winningPanel.SetActive(true);
         ball.gameObject.SetActive(false);
     }
 
