@@ -15,12 +15,13 @@ public class Slider : MonoBehaviour
     public Vector3 originalScale;
     private float powerUpCollectTime;
     [SerializeField] private GameObject block;
-    [SerializeField] private float touchMoveThreshold = 10f;
+    [SerializeField] private float touchMoveThreshold = .2f;
 
     private bool isDragging = false;
     private Vector2 touchStartPos;
     private Vector2 touchEndPos;
     private Vector2 previousTouchPosition;
+    private Vector3 prevWorldPos;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,45 +45,90 @@ public class Slider : MonoBehaviour
         // }
 
 
-        if (Input.touchCount > 0)
+        //float horizontal = Input.GetAxis("Horizontal");
+        
+        /*if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
 
             if (touch.phase == TouchPhase.Began)
             {
-                isDragging = true;
                 touchStartPos = touch.position;
                 previousTouchPosition = touch.position;
             }
             else if(touch.phase == TouchPhase.Moved)
             {
-                if (isDragging)
-                {
-                    float touchDeltaX = touch.position.x - previousTouchPosition.x;
+                
+                Vector3 touchPositionWorld = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, transform.position.z - Camera.main.transform.position.z));
+
+                // Update only the x position of the object
+                transform.position = new Vector3(touchPositionWorld.x, transform.position.y, transform.position.z);
+                
+                
+                    /*float touchDeltaX = touch.position.x - previousTouchPosition.x;
 
                     if (Mathf.Abs(touchDeltaX) > touchMoveThreshold)
                     {
                         direction = new Vector2(touchDeltaX, 0).normalized;
                         transform.Translate(direction * speed * Time.deltaTime);
-                        //rb.AddForce(direction * speed);
+                        //rb.MovePosition(direction * Vector3.right);
                     }
                     else
                     {
                         direction = Vector2.zero;
                     }
-                    previousTouchPosition = touch.position;
+                    previousTouchPosition = touch.position;#1#
+                    
+                
+
+                /*if (isDragging)
+                {                    
+                    float touchDeltaX = touch.position.x - previousTouchPosition.x;
+                    direction = new Vector2(touchDeltaX, 0);
+                    transform.Translate(direction * speed * Time.deltaTime);
                 }
+                else
+                {
+                    direction = Vector2.zero;
+                }
+
+                previousTouchPosition = touch.position;#1#
             }
             else if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
             {
-                isDragging = false;
                 direction = Vector2.zero;
             }
         }
         else
         {
             direction = Vector2.zero;
+        }*/
+        
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchPositionWorld = Camera.main.ScreenToWorldPoint(touch.position);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                previousTouchPosition = touch.position;
+            }
+            
+            if (touch.phase == TouchPhase.Moved)
+            {
+                //transform.position = new Vector3(touchPositionWorld.x, transform.position.y, transform.position.z);
+
+                Vector2 touchDelta = touch.position - previousTouchPosition;
+                Vector3 touchDeltaWorld = Camera.main.ScreenToWorldPoint(new Vector3(touchDelta.x, transform.position.y, transform.position.z)) - Camera.main.ScreenToWorldPoint(Vector3.zero);
+                transform.position += new Vector3(touchDeltaWorld.x, 0, 0);
+                previousTouchPosition = touch.position;
+            }
         }
+        else
+        {
+            direction = Vector2.zero;
+        }
+
     }
                                                                                             
     private void FixedUpdate()
