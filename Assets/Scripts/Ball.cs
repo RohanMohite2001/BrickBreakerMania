@@ -67,6 +67,7 @@ public class Ball : MonoBehaviour
         if (other.gameObject.CompareTag("Brick"))
         {
             GameManager.Instance.brickCount++;
+            Debug.Log(GameManager.Instance.brickCount + " " + GameManager.Instance.rows * GameManager.Instance.columns);
             if (GameManager.Instance.brickCount == GameManager.Instance.rows * GameManager.Instance.columns)
             {
                 GameManager.Instance.Win();
@@ -75,6 +76,7 @@ public class Ball : MonoBehaviour
                 gameObject.SetActive(false);
                 return;
             }
+            
             //power-up
             int probability = Random.Range(1, 100);
             if (probability < scaleProbabilityTime)
