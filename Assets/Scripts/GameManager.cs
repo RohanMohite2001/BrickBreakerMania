@@ -19,18 +19,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject brickPrefab;
     [SerializeField] private GameObject bricksSpace;
     public Ball ball;
+    public Slider slider;
     private Vector3 incrementTextOriginalPos;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject winningPanel;
 
     [SerializeField] private Image live1, live2, live3, star1, star2, star3;
-    [SerializeField] private Image[] winningStars;
+    [SerializeField] private GameObject[] winningStars;
     
     public int stars;
     public int lives;
     public int rows = 5;
     public int columns = 5;
     public int brickCount;
+    public Vector3 newScale;
     
     private void Awake()
     {
@@ -39,26 +41,37 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Vector3 newScale = bricksSpace.gameObject.transform.localScale;
+        newScale = bricksSpace.gameObject.transform.localScale;
         newScale.x = (float)Screen.width / (float)Screen.height * Camera.main.orthographicSize * 2f;
         bricksSpace.gameObject.transform.localScale = newScale;
-        winningStars = new Image[winningStars.Length]; 
+        
         NewGame();
     }
 
-    void AdjustBrickSpace()
+    public void CheckStars()
     {
-        
-    }
-
-    private void Update()
-    {
-        if (brickCount == rows * columns)
+        switch (stars)
         {
-            Debug.Log("Winner");
-            Win();
+            case 1:
+                star1.gameObject.SetActive(true);
+                star2.gameObject.SetActive(false);
+                star3.gameObject.SetActive(false);
+                break;
+            case 2:
+                star1.gameObject.SetActive(true);
+                star2.gameObject.SetActive(true);
+                star3.gameObject.SetActive(false);
+                break;
+            case 3:
+                star1.gameObject.SetActive(true);
+                star2.gameObject.SetActive(true);
+                star3.gameObject.SetActive(true);
+                break;
         }
-        
+    }
+    
+    public void CheckLives()
+    {
         switch (lives)
         {
             case 3: 
@@ -84,31 +97,14 @@ public class GameManager : MonoBehaviour
                 gameOverPanel.SetActive(true);
                 break;
         }
-
-        switch (stars)
-        {
-            case 1:
-                star1.gameObject.SetActive(true);
-                star2.gameObject.SetActive(false);
-                star3.gameObject.SetActive(false);
-                break;
-            case 2:
-                star1.gameObject.SetActive(true);
-                star2.gameObject.SetActive(true);
-                star3.gameObject.SetActive(false);
-                break;
-            case 3:
-                star1.gameObject.SetActive(true);
-                star2.gameObject.SetActive(true);
-                star3.gameObject.SetActive(true);
-                break;
-        }
     }
-
+    
     public void Restart()
     {
         gameOverPanel.SetActive(false);
         winningPanel.SetActive(false);
+        slider.gameObject.SetActive(true);
+        ball.gameObject.SetActive(true);
         NewGame();
         ball.inPlay = false;
         ball.StartLevel();
@@ -116,11 +112,12 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
-        // for (int i = 0; i < stars; i++)
-        // {
-        //     winningStars[0].gameObject.SetActive(true);
-        // }
         winningPanel.SetActive(true);
+        for (int i = 0; i < stars; i++)
+        {
+            winningStars[i].gameObject.SetActive(true);
+        }
+        
         ball.gameObject.SetActive(false);
     }
 

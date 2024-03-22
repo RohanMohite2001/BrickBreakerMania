@@ -8,8 +8,8 @@ using Random = UnityEngine.Random;
 
 public class Ball : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private Vector2 force;
+    public Rigidbody2D rb;
+    public Vector2 force;
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private GameObject powerUpScale;
     [SerializeField] private GameObject powerUpBlock;
@@ -21,7 +21,7 @@ public class Ball : MonoBehaviour
 
     [SerializeField] private ParticleSystem brickExplosion;
     public Slider slider;
-    public bool inPlay;
+    public bool inPlay = false;
     [SerializeField] private GameObject ballPos;
     private void Awake()
     {
@@ -67,20 +67,46 @@ public class Ball : MonoBehaviour
         if (other.gameObject.CompareTag("Brick"))
         {
             GameManager.Instance.brickCount++;
+            if (GameManager.Instance.brickCount == GameManager.Instance.rows * GameManager.Instance.columns)
+            {
+                GameManager.Instance.Win();
+                other.gameObject.SetActive(false);
+                slider.gameObject.SetActive(false);
+                gameObject.SetActive(false);
+                return;
+            }
             //power-up
             int probability = Random.Range(1, 100);
             if (probability < scaleProbabilityTime)
             {
-                Instantiate(powerUpScale, other.transform.position, other.transform.rotation);
+                //Instantiate(powerUpScale, other.transform.position, other.transform.rotation);
+                GameObject powerUpScale = ObjectPool.Instance.GetPooledObject(0);
+                if (powerUpScale != null)
+                {
+                    powerUpScale.transform.position = other.transform.position;
+                    powerUpScale.SetActive(true);
+                }
             }
             if (probability > blockProbabilityTime)
             {
-                Instantiate(powerUpBlock, other.transform.position, other.transform.rotation);
+                //Instantiate(powerUpBlock, other.transform.position, other.transform.rotation);
+                GameObject powerUpBlock = ObjectPool.Instance.GetPooledObject(1);
+                if (powerUpBlock != null)
+                {
+                    powerUpBlock.transform.position = other.transform.position;
+                    powerUpBlock.SetActive(true);
+                }
             }
 
-            if (probability < 20 && probability > 10 && GameManager.Instance.stars < 3)
+            if (probability < 40 && probability > 10 && GameManager.Instance.stars < 3)
             {
-                Instantiate(star, other.transform.position, other.transform.rotation);
+                //Instantiate(star, other.transform.position, other.transform.rotation);
+                GameObject star = ObjectPool.Instance.GetPooledObject(2);
+                if (star != null)
+                {
+                    star.transform.position = other.transform.position;
+                    star.SetActive(true);
+                }
             }
             
             //explosion effect
@@ -102,6 +128,7 @@ public class Ball : MonoBehaviour
             
             GameManager.Instance.CameraShake();
             GameManager.Instance.lives -= 1;
+            GameManager.Instance.CheckLives();
             if (GameManager.Instance.lives > 0)
             {
                 Invoke(nameof(StartLevel), 1f);

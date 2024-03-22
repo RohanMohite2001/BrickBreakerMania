@@ -10,4 +10,12 @@ public class PowerUp : MonoBehaviour
     {
         transform.Translate(new Vector2(0f, -1f) * Time.deltaTime * speed);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("MissZone"))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

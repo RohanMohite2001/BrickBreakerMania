@@ -17,11 +17,14 @@ public class Slider : MonoBehaviour
     [SerializeField] private GameObject block;
     [SerializeField] private float touchMoveThreshold = .2f;
 
-    private bool isDragging = false;
     private Vector2 touchStartPos;
     private Vector2 touchEndPos;
     private Vector2 previousTouchPosition;
     private Vector3 prevWorldPos;
+    private float maxPos;
+    [SerializeField] private Ball ball;
+    [SerializeField] private GameObject ballPos;
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,80 +32,24 @@ public class Slider : MonoBehaviour
 
     private void Start()
     {
+        float bounds = (float)Screen.width / (float)Screen.height * Camera.main.orthographicSize * 2f;
         startingPos = transform.position;
         originalScale = transform.localScale;
     }
 
     private void Update()
     {
-        // if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        // {
-        //     direction = Vector2.left;
-        // }
-        // else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        // {
-        //     direction = Vector2.right;
-        // }
+        Vector3 newPos = transform.position;
 
+        float screenWidth = Screen.width;
+        float objectWidth = transform.localScale.x * 0.5f; 
 
-        //float horizontal = Input.GetAxis("Horizontal");
-        
-        /*if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
+        float maxX = Camera.main.ScreenToWorldPoint(new Vector3(screenWidth, 0, 0)).x - transform.localScale.x;
+        float minX = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0)).x + transform.localScale.x;
 
-            if (touch.phase == TouchPhase.Began)
-            {
-                touchStartPos = touch.position;
-                previousTouchPosition = touch.position;
-            }
-            else if(touch.phase == TouchPhase.Moved)
-            {
-                
-                Vector3 touchPositionWorld = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, transform.position.z - Camera.main.transform.position.z));
+        newPos.x = Mathf.Clamp(newPos.x, minX, maxX);
 
-                // Update only the x position of the object
-                transform.position = new Vector3(touchPositionWorld.x, transform.position.y, transform.position.z);
-                
-                
-                    /*float touchDeltaX = touch.position.x - previousTouchPosition.x;
-
-                    if (Mathf.Abs(touchDeltaX) > touchMoveThreshold)
-                    {
-                        direction = new Vector2(touchDeltaX, 0).normalized;
-                        transform.Translate(direction * speed * Time.deltaTime);
-                        //rb.MovePosition(direction * Vector3.right);
-                    }
-                    else
-                    {
-                        direction = Vector2.zero;
-                    }
-                    previousTouchPosition = touch.position;#1#
-                    
-                
-
-                /*if (isDragging)
-                {                    
-                    float touchDeltaX = touch.position.x - previousTouchPosition.x;
-                    direction = new Vector2(touchDeltaX, 0);
-                    transform.Translate(direction * speed * Time.deltaTime);
-                }
-                else
-                {
-                    direction = Vector2.zero;
-                }
-
-                previousTouchPosition = touch.position;#1#
-            }
-            else if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
-            {
-                direction = Vector2.zero;
-            }
-        }
-        else
-        {
-            direction = Vector2.zero;
-        }*/
+        transform.position = newPos;
         
         if (Input.touchCount > 0)
         {
@@ -116,29 +63,15 @@ public class Slider : MonoBehaviour
             
             if (touch.phase == TouchPhase.Moved)
             {
-                //transform.position = new Vector3(touchPositionWorld.x, transform.position.y, transform.position.z);
-
                 Vector2 touchDelta = touch.position - previousTouchPosition;
                 Vector3 touchDeltaWorld = Camera.main.ScreenToWorldPoint(new Vector3(touchDelta.x, transform.position.y, transform.position.z)) - Camera.main.ScreenToWorldPoint(Vector3.zero);
-                transform.position += new Vector3(touchDeltaWorld.x, 0, 0);
+                transform.position += new Vector3(touchDeltaWorld.x * speed, 0, 0);
                 previousTouchPosition = touch.position;
             }
         }
-        else
-        {
-            direction = Vector2.zero;
-        }
 
     }
-                                                                                            
-    private void FixedUpdate()
-    {
-        if (direction != Vector2.zero)
-        {
-            
-        }
-    }
-
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Ball"))
@@ -164,7 +97,8 @@ public class Slider : MonoBehaviour
         if (other.gameObject.CompareTag("ScalePowerUp"))
         {
             AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
             transform.localScale += new Vector3(.2f, 0, 0);
             StartCoroutine(PowerUpScaleTimer(5f));
         }
@@ -172,7 +106,8 @@ public class Slider : MonoBehaviour
         if (other.gameObject.CompareTag("BlockPowerUp"))
         {
             AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
             block.gameObject.SetActive(true);
             StartCoroutine(PowerUpBlockTimer(5));
         }
@@ -180,8 +115,10 @@ public class Slider : MonoBehaviour
         if (other.gameObject.CompareTag("Star"))
         {
             AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
             GameManager.Instance.stars += 1;
+            GameManager.Instance.CheckStars();
         }
     }
 
