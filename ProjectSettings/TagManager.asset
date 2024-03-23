@@ -15,6 +15,7 @@ TagManager:
   - Star
   - Explosion
   - MultiplyPowerUp
+  - BallPref
   layers:
   - Default
   - TransparentFX

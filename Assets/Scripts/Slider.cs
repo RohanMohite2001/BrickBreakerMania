@@ -16,6 +16,10 @@ public class Slider : MonoBehaviour
     private Vector2 previousTouchPosition;
     [SerializeField] private Ball ball;
     [SerializeField] private GameObject ballPos;
+    [SerializeField] private GameObject ballPref;
+    private Coroutine scalePowerUpCoroutine;
+    private Coroutine blockPowerUpCoroutine;
+
     
     private void Start()
     {
@@ -90,7 +94,12 @@ public class Slider : MonoBehaviour
                 transform.localScale += new Vector3(.2f, 0, 0);
             }
 
-            StartCoroutine(PowerUpScaleTimer(5f));
+            if (scalePowerUpCoroutine != null)
+            {
+                StopCoroutine(scalePowerUpCoroutine);
+            }
+            
+            scalePowerUpCoroutine = StartCoroutine(PowerUpScaleTimer(5f));
         }
 
         if (other.gameObject.CompareTag("BlockPowerUp"))
@@ -101,7 +110,13 @@ public class Slider : MonoBehaviour
             if (GameManager.Instance.inPlay)
             {
                 block.gameObject.SetActive(true);
-                StartCoroutine(PowerUpBlockTimer(5));
+
+                if (blockPowerUpCoroutine != null)
+                {
+                    StopCoroutine(blockPowerUpCoroutine);
+                }
+                
+                blockPowerUpCoroutine = StartCoroutine(PowerUpBlockTimer(5));
             }
         }
 
@@ -119,7 +134,8 @@ public class Slider : MonoBehaviour
             AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
             //Destroy(other.gameObject);
             other.gameObject.SetActive(false);
-            
+            Instantiate(ballPref, ball.transform.position, ball.transform.rotation);
+            Instantiate(ballPref, ball.transform.position, ball.transform.rotation);
         }
     }
 
@@ -127,12 +143,13 @@ public class Slider : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         transform.localScale = originalScale;
-        Debug.Log("Size resets");
+        scalePowerUpCoroutine = null;
     }
     
     private IEnumerator PowerUpBlockTimer(float time)
     {
         yield return new WaitForSeconds(time);
         block.gameObject.SetActive(false);
+        blockPowerUpCoroutine = null;
     }
 }
