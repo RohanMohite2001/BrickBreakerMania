@@ -7,32 +7,18 @@ using UnityEngine.PlayerLoop;
 
 public class Slider : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private Vector2 direction;
     [SerializeField] private float speed = 0f;
     private float maxBouncingAngle = 75f;
     public Vector3 startingPos;
     public Vector3 originalScale;
-    private float powerUpCollectTime;
     [SerializeField] private GameObject block;
-    [SerializeField] private float touchMoveThreshold = .2f;
 
-    private Vector2 touchStartPos;
-    private Vector2 touchEndPos;
     private Vector2 previousTouchPosition;
-    private Vector3 prevWorldPos;
-    private float maxPos;
     [SerializeField] private Ball ball;
     [SerializeField] private GameObject ballPos;
     
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
     private void Start()
     {
-        float bounds = (float)Screen.width / (float)Screen.height * Camera.main.orthographicSize * 2f;
         startingPos = transform.position;
         originalScale = transform.localScale;
     }
@@ -99,7 +85,11 @@ public class Slider : MonoBehaviour
             AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
             //Destroy(other.gameObject);
             other.gameObject.SetActive(false);
-            transform.localScale += new Vector3(.2f, 0, 0);
+            if (GameManager.Instance.inPlay)
+            {
+                transform.localScale += new Vector3(.2f, 0, 0);
+            }
+
             StartCoroutine(PowerUpScaleTimer(5f));
         }
 
@@ -108,8 +98,11 @@ public class Slider : MonoBehaviour
             AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
             //Destroy(other.gameObject);
             other.gameObject.SetActive(false);
-            block.gameObject.SetActive(true);
-            StartCoroutine(PowerUpBlockTimer(5));
+            if (GameManager.Instance.inPlay)
+            {
+                block.gameObject.SetActive(true);
+                StartCoroutine(PowerUpBlockTimer(5));
+            }
         }
 
         if (other.gameObject.CompareTag("Star"))
@@ -119,6 +112,14 @@ public class Slider : MonoBehaviour
             other.gameObject.SetActive(false);
             GameManager.Instance.stars += 1;
             GameManager.Instance.CheckStars();
+        }
+        
+        if (other.gameObject.CompareTag("MultiplyPowerUp"))
+        {
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.powerUpSfx);
+            //Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
+            
         }
     }
 

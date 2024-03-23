@@ -8,6 +8,10 @@ public class PowerUp : MonoBehaviour
     [SerializeField] private float speed = 10f;
     private void Update()
     {
+        if (!GameManager.Instance.inPlay)
+        {
+            gameObject.SetActive(false);
+        }
         transform.Translate(new Vector2(0f, -1f) * Time.deltaTime * speed);
     }
 

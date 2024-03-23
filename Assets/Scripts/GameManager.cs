@@ -26,14 +26,16 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Image live1, live2, live3, star1, star2, star3;
     [SerializeField] private GameObject[] winningStars;
+    [SerializeField] private GameObject block;
     
     public int stars;
     public int lives;
     public int rows = 5;
     public int columns = 5;
     public int brickCount;
+    public int totalBrickCount;
     public Vector3 newScale;
-    
+    public bool inPlay;
     private void Awake()
     {
         Instance = this;
@@ -47,9 +49,28 @@ public class GameManager : MonoBehaviour
         
         NewGame();
     }
+    
 
+    public void CheckBrickCount()
+    {
+        Debug.Log(brickCount + " " + totalBrickCount);
+        if (brickCount >= totalBrickCount)
+        {
+            Win();
+        }
+    }
+
+    public void CheckLivesCount()
+    {
+        if (lives <= 0)
+        {
+            GameOver();
+        }
+    }
+    
     public void CheckStars()
     {
+        Debug.Log("stars: " + stars);   
         switch (stars)
         {
             case 1:
@@ -72,6 +93,7 @@ public class GameManager : MonoBehaviour
     
     public void CheckLives()
     {
+        Debug.Log("lives: " + lives);
         switch (lives)
         {
             case 3: 
@@ -94,13 +116,34 @@ public class GameManager : MonoBehaviour
                 live2.gameObject.SetActive(false);
                 live3.gameObject.SetActive(false);
                 Debug.Log("Game Over");
-                gameOverPanel.SetActive(true);
                 break;
+        }
+    }
+
+    private void GameOver()
+    {
+        block.SetActive(false);
+        inPlay = false;
+        gameOverPanel.SetActive(true);
+        slider.gameObject.SetActive(false);
+        ball.gameObject.SetActive(false);
+        stars = 0;
+        lives = 3;
+    }
+
+    private void DestroyAllBricksInHirachy()
+    {
+        GameObject[] bricks = GameObject.FindGameObjectsWithTag("Brick");
+        
+        foreach (GameObject brick in bricks)
+        {
+            Destroy(brick);
         }
     }
     
     public void Restart()
     {
+        DestroyAllBricksInHirachy();
         gameOverPanel.SetActive(false);
         winningPanel.SetActive(false);
         slider.gameObject.SetActive(true);
@@ -112,17 +155,23 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
+        block.SetActive(false);
+        inPlay = false;
         winningPanel.SetActive(true);
         for (int i = 0; i < stars; i++)
         {
             winningStars[i].gameObject.SetActive(true);
         }
-        
+
+        slider.gameObject.SetActive(false);
         ball.gameObject.SetActive(false);
     }
 
     private void NewGame()
     {
+        slider.gameObject.SetActive(true);
+        ball.gameObject.SetActive(true);
+        inPlay = true;
         live1.gameObject.SetActive(true);
         live2.gameObject.SetActive(true);
         live3.gameObject.SetActive(true);
@@ -132,8 +181,13 @@ public class GameManager : MonoBehaviour
         lives = 3;
         stars = 0;
         brickCount = 0;
+        totalBrickCount = rows * columns;
+        CheckLives();
+        CheckStars();
+        Debug.Log(brickCount + " " + totalBrickCount);
         Instantiate_Bricks(rows, columns);
     }
+    
 
     private void Instantiate_Bricks(int rows, int columns)
     {

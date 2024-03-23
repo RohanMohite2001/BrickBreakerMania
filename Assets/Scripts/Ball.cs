@@ -10,16 +10,12 @@ public class Ball : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector2 force;
-    [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private GameObject powerUpScale;
     [SerializeField] private GameObject powerUpBlock;
     [SerializeField] private GameObject star;
     [SerializeField] public float speed = 400f;
     [SerializeField] private Vector3 startingPos;
-    [SerializeField] private int scaleProbabilityTime = 10;
-    [SerializeField] private int blockProbabilityTime = 80;
 
-    [SerializeField] private ParticleSystem brickExplosion;
     public Slider slider;
     public bool inPlay = false;
     [SerializeField] private GameObject ballPos;
@@ -64,63 +60,6 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Brick"))
-        {
-            GameManager.Instance.brickCount++;
-            Debug.Log(GameManager.Instance.brickCount + " " + GameManager.Instance.rows * GameManager.Instance.columns);
-            if (GameManager.Instance.brickCount == GameManager.Instance.rows * GameManager.Instance.columns)
-            {
-                GameManager.Instance.Win();
-                other.gameObject.SetActive(false);
-                slider.gameObject.SetActive(false);
-                gameObject.SetActive(false);
-                return;
-            }
-            
-            //power-up
-            int probability = Random.Range(1, 100);
-            if (probability < scaleProbabilityTime)
-            {
-                //Instantiate(powerUpScale, other.transform.position, other.transform.rotation);
-                GameObject powerUpScale = ObjectPool.Instance.GetPooledObject(0);
-                if (powerUpScale != null)
-                {
-                    powerUpScale.transform.position = other.transform.position;
-                    powerUpScale.SetActive(true);
-                }
-            }
-            if (probability > blockProbabilityTime)
-            {
-                //Instantiate(powerUpBlock, other.transform.position, other.transform.rotation);
-                GameObject powerUpBlock = ObjectPool.Instance.GetPooledObject(1);
-                if (powerUpBlock != null)
-                {
-                    powerUpBlock.transform.position = other.transform.position;
-                    powerUpBlock.SetActive(true);
-                }
-            }
-
-            if (probability < 40 && probability > 10 && GameManager.Instance.stars < 3)
-            {
-                //Instantiate(star, other.transform.position, other.transform.rotation);
-                GameObject star = ObjectPool.Instance.GetPooledObject(2);
-                if (star != null)
-                {
-                    star.transform.position = other.transform.position;
-                    star.SetActive(true);
-                }
-            }
-            
-            //explosion effect
-            brickExplosion.transform.position = other.transform.position;
-            brickExplosion.gameObject.SetActive(true);
-            brickExplosion.Play();
-            
-            //Brick sfx
-            AudioManager.Instance.PlaySfx(AudioManager.Instance.tap);
-            other.gameObject.SetActive(false);
-        }
-        
         if (other.gameObject.CompareTag("MissZone"))
         {
             AudioManager.Instance.PlaySfx(AudioManager.Instance.buzzer);
@@ -131,14 +70,14 @@ public class Ball : MonoBehaviour
             GameManager.Instance.CameraShake();
             GameManager.Instance.lives -= 1;
             GameManager.Instance.CheckLives();
+            GameManager.Instance.CheckStars();
             if (GameManager.Instance.lives > 0)
             {
                 Invoke(nameof(StartLevel), 1f);
             }
-            else if (GameManager.Instance.lives <= 0)
+            else
             {
-                Debug.Log("GameOver");
-                gameObject.SetActive(false);
+                GameManager.Instance.CheckLivesCount();                
             }
         }
 
